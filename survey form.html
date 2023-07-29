@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="survey form.css">
+
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form action="/submit_survey" method="post">
+        <!--radio question -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="Gender" value="male" required>
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" name="Gender" id="female" value="female" required>
+        <label for="female">Female</label>
+        <br>
+        <input type="radio" name="Gender" id="Other" value="Other" required>
+        <label for="Other">Other</label>
+        <br>
+        <!--checkbox-->
+        <h1>Personal Details</h1>
+        <p>please fill in your personal details:</p>
+        <input type="text" id="First Name" name="First Name" required>
+        <label for="First Name"> First Name</label>
+        <br>
+        <input type="text" id="Second Name" name="Second Name" required>
+        <label for="Second Name">Second Name</label>
+        <br>
+        <!--textarea-->
+        <label for="Feedback">Any questions or Feedback:</label>
+        <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+        <br>
+        <!--submit button-->
+        <input type="Submit" value="submit">
+    </form>
+    
+</body>
+</html>
