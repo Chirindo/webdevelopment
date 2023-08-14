@@ -1,15 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="survey form.css">
+
+    <title>HAPPY SHOP</title>
 </head>
 <body>
-
-<h1 style="background-color: blueviolet;">This is a Heading</h1>
-<h2>this is a second heading</h2>
-<p style="color:red;" style="text-align: right;">This is a paragraph.</p>
-<h3>this is a third heading</h3>
-<p style="text-align: center;"><strong>this is text is so important!</p>
-
+    <h1>HOME</h1>
+    <h1>ABOUT US </h1>
+    <h2>OUR PRODUCTS</h2>
+    <h4>survey form</h4>
+    <form action="/submit_survey" method="post">
+        <!--radio question -->
+       <p><b>Gender</b></p>
+        <input type="radio" id="male" name="Gender" value="male" required>
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" name="Gender" id="female" value="female" required>
+        <label for="female">Female</label>
+        <br>
+        <input type="radio" name="Gender" id="Other" value="Other" required>
+        <label for="Other">Other</label>
+        <br>
+        <!--checkbox-->
+        <h1>Personal Details</h1>
+        <p>please fill in your personal details:</p>
+        <input type="text" id="First Name" name="First Name" required>
+        <label for="First Name"> First Name</label>
+        <br>
+        <input type="text" id="Second Name" name="Second Name" required>
+        <label for="Second Name">Second Name</label>
+        <br>
+        <!--textarea-->
+        <label for="Feedback">Any questions or Feedback:</label>
+        <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+        <br>
+        <!--submit button-->
+        <input type="Submit" value="submit">
+    </form>
+    
 </body>
 </html>

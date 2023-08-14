@@ -5,9 +5,19 @@ body{
 
 }
 h1{
-    text-align: center;
+    align-self: left;
+    padding: 30;
+    position: relative;
+    padding: top;
 }
 h2{
+    text-align: left;
+    position: relative;
+}
+h3{
+    text-align: left;
+}
+h4{
     text-align: center;
 }
 form{
